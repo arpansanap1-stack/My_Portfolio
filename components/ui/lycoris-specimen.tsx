@@ -586,7 +586,9 @@ export default function LycorisSpecimen({
   }, [fontHref])
 
   const look = React.useRef({ crimson, alive, reduced, florets, seed })
-  look.current = { crimson, alive, reduced, florets, seed }
+  React.useEffect(() => {
+    look.current = { crimson, alive, reduced, florets, seed }
+  }, [crimson, alive, reduced, florets, seed])
 
   React.useEffect(() => {
     const root = rootRef.current
@@ -1038,7 +1040,7 @@ export default function LycorisSpecimen({
             >
               Developer &amp; Builder
             </span>
-            <h2 style={{ margin: 0, font: "inherit", fontFeatureSettings: '"liga" 1' }} aria-label={name}>
+            <h1 style={{ margin: 0, font: "inherit", fontFeatureSettings: '"liga" 1' }} aria-label={name}>
               {letters.map((c, i) => (
                 <span key={i} data-ch className="inline-block" style={{ willChange: "transform" }} aria-hidden>
                   <span className="lys-char" style={{ animationDelay: 0.15 + i * 0.07 + "s" }}>
@@ -1046,7 +1048,7 @@ export default function LycorisSpecimen({
                   </span>
                 </span>
               ))}
-            </h2>
+            </h1>
           </div>
 
           <div className="absolute flex items-end justify-between gap-6" style={{ left: "5cqw", right: "5cqw", bottom: "5cqh" }}>
