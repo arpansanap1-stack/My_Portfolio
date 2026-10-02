@@ -34,7 +34,7 @@ const projects = [
 
 export default function ProjectsSection() {
   return (
-    <section id="projects" className="relative border-t border-line bg-ink px-6 py-24 sm:px-8 sm:py-32">
+    <section id="projects" className="relative scroll-mt-24 border-t border-line bg-ink px-6 py-24 sm:px-8 sm:py-32">
       <div className="mx-auto max-w-6xl">
         <SectionHeader index="03" label="Work" title="Selected projects">
           <a

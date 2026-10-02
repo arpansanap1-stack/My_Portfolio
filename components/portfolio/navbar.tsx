@@ -16,7 +16,7 @@ export default function Navbar() {
   const [scrolled, setScrolled] = React.useState(false);
 
   React.useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 40);
+    const handleScroll = () => setScrolled(window.scrollY > 20);
     handleScroll();
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
@@ -27,7 +27,7 @@ export default function Navbar() {
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
-        solid ? "border-b border-line bg-ink/90 py-3 backdrop-blur-md" : "bg-transparent py-5"
+        solid ? "border-b border-line bg-ink/90 py-3 backdrop-blur-md shadow-lg shadow-black/40" : "bg-transparent py-4"
       }`}
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 sm:px-8">

@@ -35,7 +35,7 @@ export default function ContactSection() {
   }, [resumeOpen]);
 
   return (
-    <section id="contact" className="relative border-t border-line bg-ink px-6 py-24 sm:px-8 sm:py-32">
+    <section id="contact" className="relative scroll-mt-24 border-t border-line bg-ink px-6 py-24 sm:px-8 sm:py-32">
       <div
         aria-hidden
         className="pointer-events-none absolute bottom-10 left-1/2 h-[300px] w-[700px] max-w-full -translate-x-1/2 rounded-full opacity-20 blur-[160px]"

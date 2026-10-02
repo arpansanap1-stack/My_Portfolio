@@ -997,7 +997,7 @@ export default function LycorisSpecimen({
 
         {/* ================================ 0 · cover ================================ */}
         <div className="pointer-events-none absolute inset-0">
-          <div className="absolute flex items-start justify-between gap-6" style={{ left: "5cqw", right: "5cqw", top: "5cqh" }}>
+          <div className="absolute flex items-start justify-between gap-6" style={{ left: "5cqw", right: "5cqw", top: "clamp(92px, 12cqh, 115px)" }}>
             <div {...sc(0, "clip", 0)} style={{ ...display, ...hidden, fontSize: "clamp(22px, 3.4cqw, 48px)", lineHeight: 0.95, letterSpacing: "0.02em", textTransform: "uppercase" }}>
               {name}
               <br />
@@ -1085,7 +1085,7 @@ export default function LycorisSpecimen({
         <div className="pointer-events-none absolute inset-0" style={sans}>
           <div
             className="lys-spec pointer-events-auto absolute grid items-center"
-            style={{ left: "6cqw", right: "6cqw", top: "12cqh", bottom: "18cqh", gridTemplateColumns: "1fr min(30cqw, 34cqh) 1fr", columnGap: "3cqw" }}
+            style={{ left: "6cqw", right: "6cqw", top: "clamp(88px, 13cqh, 115px)", bottom: "18cqh", gridTemplateColumns: "1fr min(30cqw, 34cqh) 1fr", columnGap: "3cqw" }}
           >
             {/* Left Capabilities Column */}
             <div className="relative flex flex-col gap-[3cqh]">
@@ -1158,7 +1158,7 @@ export default function LycorisSpecimen({
 
         {/* ================================ 3 · philosophy =============================== */}
         <div className="pointer-events-none absolute inset-0" style={display}>
-          <div className="absolute text-center" style={{ left: "50%", top: "13cqh", transform: "translateX(-50%)", fontSize: "min(14cqw, 11cqh)", lineHeight: 0.95, textTransform: "uppercase", whiteSpace: "nowrap" }}>
+          <div className="absolute text-center" style={{ left: "50%", top: "clamp(92px, 14cqh, 120px)", transform: "translateX(-50%)", fontSize: "min(14cqw, 11cqh)", lineHeight: 0.95, textTransform: "uppercase", whiteSpace: "nowrap" }}>
             <span {...sc(3, "fade", 0.3)} style={{ ...hidden, position: "absolute", right: "100%", top: "0.35em", fontSize: "0.14em", marginRight: "1.4em", textTransform: "none", color: crimson, ...sans, letterSpacing: "0.2em" }}>
               ARPAN SANAP
             </span>

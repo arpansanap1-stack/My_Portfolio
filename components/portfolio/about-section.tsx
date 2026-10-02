@@ -10,7 +10,7 @@ const facts = [
 
 export default function AboutSection() {
   return (
-    <section id="about" className="relative border-t border-line bg-ink px-6 py-24 sm:px-8 sm:py-32">
+    <section id="about" className="relative scroll-mt-24 border-t border-line bg-ink px-6 py-24 sm:px-8 sm:py-32">
       <div className="mx-auto max-w-6xl">
         <SectionHeader index="01" label="About" title="About me" />
 
